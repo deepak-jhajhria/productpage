@@ -1,29 +1,22 @@
-$('.btn-number').click(function(e){
-    e.preventDefault();
-    fieldName = $(this).attr('data-field');
-    type      = $(this).attr('data-type');
-    var input = $("input[name='"+fieldName+"']");
-    var currentVal = parseInt(input.val());
-    if (!isNaN(currentVal)) {
-        if(type == 'minus') {    
-            if(currentVal > input.attr('min')) {
-                input.val(currentVal - 1).change();
-            } 
-            if(parseInt(input.val()) == input.attr('min')) {
-                $(this).attr('disabled', true);
-            }
-        } else if(type == 'plus') {
-            if(currentVal < input.attr('max')) {
-                input.val(currentVal + 1).change();
-            }
-            if(parseInt(input.val()) == input.attr('max')) {
-                $(this).attr('disabled', true);
-            }
+function openTab(tabId) {
+
+    var tabButtons = document.querySelectorAll(".tab-button");
+    var tabContents = document.querySelectorAll(".tab-content");
+
+    
+    tabContents.forEach(function(tabContent) {
+        tabContent.style.display = "none";
+    });
+
+    tabButtons.forEach(function(tabButton) {
+        tabButton.classList.remove("active");
+    });
+
+    document.getElementById(tabId).style.display = "block";
+
+    tabButtons.forEach(function(button) {
+        if (button.getAttribute("onclick").includes(tabId)) {
+            button.classList.add("active");
         }
-    } else {
-        input.val(0);
-    }
-});
-$('.input-number').focusin(function(){
-   $(this).data('oldValue', $(this).val());
-});
+    });
+}
