@@ -1,0 +1,135 @@
+@import url(/assets/css/root.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    text-decoration: none !important;
+    list-style-type: none !important;
+    box-sizing: border-box !important;
+}
+
+.wh-logo {
+    max-width: 90px;
+    height: 90px;
+}
+
+.wh-4-min {
+    max-width: 692px;
+    height: 85px;
+}
+
+/* nav bar  */
+.nav-bg {
+    border: 1px solid #DEE2E6;
+    background: #FFF;
+    box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.10);
+}
+
+.gap-15 {
+    gap: 15px !important;
+}
+
+.py-30 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
+.H-fw-bold:hover {
+    font-weight: 700 !important;
+    /* -webkit-text-stroke: 1px; */
+}
+
+/* section 1  */
+.bs-review {
+    color: rgba(0, 0, 0, 0.70) !important;
+}
+
+.form-control {
+    flex: none !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.w-30 {
+    width: 30px !important;
+}
+
+.input:focus {
+    border: none !important;
+}
+
+.input-group {
+    border: 1px solid #E8E8E8 !important;
+    background: rgba(196, 196, 196, 0.00) !important;
+    width: 106px !important;
+}
+
+.p-10-33 {
+    padding: 10px 33px !important;
+}
+
+.wh-30 {
+    width: 30px;
+    height: 30px;
+}
+
+.clrbordr {
+    border: 1.5px solid #D5D5D5 !important;
+}
+
+.m_2 {
+    margin: 2px !important;
+}
+.overflow-x-auto::-webkit-scrollbar{
+    overflow: hidden !important;
+}
+.footlokerCard{
+background: #FFF !important;
+box-shadow: 2px 30px 47px -20px rgba(0, 0, 0, 0.20) !important;
+}
+.imgbox {
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #FFF;
+    width: 312px;
+    height: 203px;
+    flex-shrink: 0;
+}
+.sizeBtn{
+    border-radius: 40px !important;
+border: 1px solid rgba(0, 0, 0, 0.12) !important;
+background: #FFF !important;
+}
+.p-8-33{
+    padding: 8px 33px !important;
+}
+/* section 3  */
+.related-products-card{
+    border-radius: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    padding-bottom: 30px;
+}
+.rotate-41{
+    transform: rotate(-41.689deg);   
+}
+.discount-position{
+    position: absolute;
+    top: 4%;
+    left: -9%;
+}
+.new-card{
+    border-radius: 0px 14px 0px 0px;
+    background: #555;   
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+/* footer  */
+.svg:hover {
+    transform: translateY(-5px) !important;
+}
+.pt-120{
+    padding-top: 120px !important;
+}

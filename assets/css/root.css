@@ -1,0 +1,125 @@
+:root {
+    /* font size  */
+    --fs-xs: 10px;
+    --fs-sm: 14px;
+    --fs-base: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 20px;
+    --fs-2xl: 24px;
+    --fs-2xl2: 25px;
+    --fs-3xl: 30px;
+    /* color   */
+    --grey1: #DEE2E6;
+    --grey2: #F3F3F3;
+    --grey3: #C4C4C4;
+    --grey4: #808082;
+    --grey5: #E8E8E8;
+    --red: #CC111C;
+    --khakhi: #AA9E78;
+    --black1: #16141F;
+    --black2: #222;
+    --black3: #181818;
+    --black4:#454729;
+    --green: #28A745;
+    --blue:#007BFF;
+    /* font family  */
+    --ff-robot: 'Roboto', sans-serif;
+    --ff-p: 'Poppins', sans-serif;
+    --ff-jose: 'Josefin Sans', sans-serif;
+}
+.fs-xs{
+    font-size: var(--fs-xs) !important;
+}
+.fs-sm{
+    font-size: var(--fs-sm) !important;
+}
+.fs-base{
+    font-size: var(--fs-base) !important;
+}
+.fs-lg{
+    font-size: var(--fs-lg) !important;
+}
+.fs-xl{
+    font-size: var(--fs-xl) !important;
+}
+.fs-2xl{
+    font-size: var(--fs-2xl) !important;
+}
+.fs-2xl2{
+    font-size: var(--fs-2xl2) !important;
+}
+.fs-3xl{
+    font-size: var(--fs-3xl) !important;
+}
+.grey1{
+    color: var(--grey1) !important;
+}
+.grey2{
+    color: var(--grey2) !important;
+}
+.bg-grey2{
+    background-color: var(--grey2) !important;
+}
+.grey3{
+    color: var(--grey3) !important;
+}
+.grey4{
+    color: var(--grey4) !important;
+}
+.bg-grey4{
+    background: var(--grey4) !important;
+}
+.grey5{
+    color: var(--grey5) !important;
+}
+.red{
+    color: var(--red) !important;
+}
+.bg-red{
+    background: var(--red) !important;
+}
+.khakhi{
+    color: var(--khakhi) !important;
+}
+.bg-khakhi{
+    background: var(--khakhi) !important;
+}
+.green{
+    color: var(--green) !important;
+}
+.blue{
+    color: var(--blue) !important;
+}
+.bg-green{
+    background: var(--green) !important;
+}
+.black1{
+    color: var(--black1) !important;
+}
+.bg-black1{
+    background: var(--black1) !important;
+}
+.black2{
+    color: var(--black2) !important;
+}
+.black3{
+    color: var(--black3) !important;
+}
+.bg-black3{
+    background: var(--black3) !important;
+}
+.bg-orange{
+    background: #D36B31 !important;
+}
+.black4{
+    color: var(--black4) !important;
+}
+.ff-p{
+    font-family: var(--ff-p) !important;
+}
+.ff-robot{
+    font-family: var(--ff-robot) !important;
+}
+.ff-jose{
+    font-family: var(--ff-jose) !important;
+}
