@@ -8,14 +8,14 @@
 }
 
 .wh-logo {
-    max-width: 90px;
-    height: 90px;
+    max-width: 40px;
+    height: 40px;
 }
 
 .wh-4-min {
-    max-width: 692px;
-    height: 85px;
-}
+    max-width: 202px;
+    height: 40px;
+} 
 
 /* nav bar  */
 .nav-bg {
@@ -34,8 +34,50 @@
 }
 
 .H-fw-bold:hover {
-    font-weight: 700 !important;
-    /* -webkit-text-stroke: 1px; */
+    /* font-weight: 700 !important; */
+    -webkit-text-stroke: 1px;
+}
+.underLine::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    border-radius: 14px;
+    background-color: var(--grey2);
+    bottom: 0;
+    left: 10%;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.underLine:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.menu span {
+    display: flex;
+    width: 26px;
+    height: 3px;
+    margin-top: 4px;
+    background: var(--black4);
+    transition: .4s;
+    border-radius: 2px;}
+.span4 {
+    transform: rotate(45deg) !important;
+    transition: .4s
+}
+.span5 {
+    transform: rotate(-45deg) !important;
+    position: relative;
+    top: -7px;
+    transition: .4s
+}
+.span6 {
+    display: none !important;
+    transition: .4s
+}
+.transition-4 {
+    transition: .4s
 }
 
 /* section 1  */
@@ -64,7 +106,12 @@
     background: rgba(196, 196, 196, 0.00) !important;
     width: 106px !important;
 }
-
+.quantity-card{
+    border-radius: 33px;
+border: 1px solid #E8E8E8;
+background: rgba(196, 196, 196, 0.00);
+padding: 10px 24px;
+}
 .p-10-33 {
     padding: 10px 33px !important;
 }
@@ -109,7 +156,25 @@
 .p-8-33 {
     padding: 8px 33px !important;
 }
+select {
+    display: block;
+    appearance: none;
+    background-image: url("../img/dashicons_arrow-up-alt2.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+    outline: none;
+    border-radius: 21px;
+    border: 1px solid #e8e8e8;
+    padding-right: 60px;
+    padding-left: 20px;
+    cursor: pointer;
 
+}
+.clickSize div div div button:focus{
+    background: #555 !important;
+    color: #FFF !important;
+}
 /* section 3  */
 .tab-button {
     cursor: pointer;
@@ -131,35 +196,94 @@
     border-bottom: 3px solid #FF0000;
     color: #FF0000;
 }
+.tab:focus {
+    border-bottom: 3px solid #FF0000;
+    color: #FF0000 !important;
+}
 
 .tab-content.tab-visible {
     display: block;
 }
-
-/* section 4  */
-.related-products-card {
+/* sec-3 */
+.sec-3-card {
+    max-width: 312px;
+    max-height: 390px;
+    flex-shrink: 0;
     border-radius: 17px;
     border: 1px solid rgba(0, 0, 0, 0.12);
-    padding-bottom: 30px;
+    background: #FFF;
 }
 
-.rotate-41 {
-    transform: rotate(-41.689deg);
-}
-
-.discount-position {
+.off-card {
     position: absolute;
-    top: 4%;
+    width: 117.06px;
+    height: 22.199px;
+    transform: rotate(-42.701deg);
+    flex-shrink: 0;
+    top: 8%;
     left: -9%;
+    background: #D36B31;
+
 }
 
 .new-card {
+    position: absolute;
+    width: 68px;
+    height: 29px;
+    flex-shrink: 0;
     border-radius: 0px 14px 0px 0px;
     background: #555;
-    position: absolute;
     top: 0%;
     right: 0%;
 }
+
+.nmbr-btn {
+    width: 59px;
+    height: 59px;
+    flex-shrink: 0;
+    border-radius: 9.219px;
+    background: #FFF;
+    color: rgba(0, 0, 0, 0.70) !important;
+    box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.12);
+    transition: all 400ms linear;
+    border: 1px solid transparent;
+}
+
+.nmbr-btn:focus {
+    border: 1px solid transparent;
+    border-radius: 9.219px;
+    background: #F40;
+    color: #FFF !important;
+    box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.12);
+
+}
+
+.nmbr-btn {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 9.219px;
+    background: var(--white1);
+    box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.12);
+}
+
+.next-btn {
+    width: 92px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    border: 1px solid #9C9C9C;
+    background: rgba(196, 196, 196, 0.00);
+    transition: all 400ms linear;
+}
+
+.next-btn:hover {
+    border: 1px solid transparent;
+    background: #F40 !important;
+    color: #FFF !important;
+}
+
+/* section 4  */
 
 /* footer  */
 .svg:hover {
@@ -167,5 +291,108 @@
 }
 
 .pt-120 {
-    padding-top: 120px !important;
+    padding-top: 40px !important;
+}
+@media (min-width:576px) {
+    :root{
+        --fs-xs: 10px;
+        --fs-sm: 13px;
+        --fs-base: 15px;
+        --fs-lg: 17px;
+        --fs-xl: 19px;
+        --fs-2xl: 22px;
+        --fs-2xl2: 23px;
+        --fs-3xl: 27px;
+    }
+    .wh-logo {
+        max-width: 50px;
+        height: 50px;
+    }
+    
+    .wh-4-min {
+        max-width: 492px;
+        height: 45px;
+    } 
+}
+@media(max-width:868px) {
+    .mobileView {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        position: fixed;
+        z-index: -1;
+        top: 0%;
+        width: 100%;
+        min-width: 320px;
+        height: 100%;
+        /* background-color: var(--black2); */
+        background: var(--grey2);
+        left: -100%;
+        transition: all 500ms linear;
+        z-index: 3;
+    }
+
+    .mobileView.show {
+        left: 0;
+    }
+
+    .menu {
+        z-index: 4 !important;
+        cursor: pointer;
+    }
+}
+@media(min-width:868px) {
+    .menu {
+        display: none;
+    }
+    .menu span {
+        display: flex;
+        width: 30px;
+        height: 3px;
+        margin-top: 5px;
+        background-color: var(--black4);
+        transition: .4s;
+        border-radius: 12px;
+    }
+
+    .span5 {
+        top: -8px;
+    }
+
+}
+@media (min-width:768px) {
+   .wh-logo {
+    max-width: 70px;
+    height: 70px;
+}
+
+.wh-4-min {
+    max-width: 592px;
+    height: 65px;
+} 
+}
+@media (min-width:992px) {
+    :root{
+        --fs-xs: 10px;
+        --fs-sm: 14px;
+        --fs-base: 16px;
+        --fs-lg: 18px;
+        --fs-xl: 20px;
+        --fs-2xl: 24px;
+        --fs-2xl2: 25px;
+        --fs-3xl: 30px;
+    }
+    .wh-logo {
+        max-width: 90px;
+        height: 90px;
+    }
+    
+    .wh-4-min {
+        max-width: 692px;
+        height: 85px;
+    }
+    .pt-120 {
+        padding-top: 120px !important;
+    }
 }
