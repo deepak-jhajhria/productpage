@@ -15,7 +15,7 @@
 .wh-4-min {
     max-width: 202px;
     height: 40px;
-} 
+}
 
 /* nav bar  */
 .nav-bg {
@@ -37,6 +37,7 @@
     /* font-weight: 700 !important; */
     -webkit-text-stroke: 1px;
 }
+
 .underLine::before {
     content: '';
     position: absolute;
@@ -50,10 +51,12 @@
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
 }
+
 .underLine:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
+
 .menu span {
     display: flex;
     width: 26px;
@@ -61,21 +64,26 @@
     margin-top: 4px;
     background: var(--black4);
     transition: .4s;
-    border-radius: 2px;}
+    border-radius: 2px;
+}
+
 .span4 {
     transform: rotate(45deg) !important;
     transition: .4s
 }
+
 .span5 {
     transform: rotate(-45deg) !important;
     position: relative;
     top: -7px;
     transition: .4s
 }
+
 .span6 {
     display: none !important;
     transition: .4s
 }
+
 .transition-4 {
     transition: .4s
 }
@@ -106,12 +114,14 @@
     background: rgba(196, 196, 196, 0.00) !important;
     width: 106px !important;
 }
-.quantity-card{
+
+.quantity-card {
     border-radius: 33px;
-border: 1px solid #E8E8E8;
-background: rgba(196, 196, 196, 0.00);
-padding: 10px 24px;
+    border: 1px solid #E8E8E8;
+    background: rgba(196, 196, 196, 0.00);
+    padding: 10px 24px;
 }
+
 .p-10-33 {
     padding: 10px 33px !important;
 }
@@ -133,9 +143,45 @@ padding: 10px 24px;
     overflow: hidden !important;
 }
 
-.footlokerCard {
-    background: #FFF !important;
-    box-shadow: 2px 30px 47px -20px rgba(0, 0, 0, 0.20) !important;
+.sec-2-card {
+    border-radius: 10px;
+    /* opacity: 0.2; */
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.20);
+}
+
+.sec-2-card:hover {
+    box-shadow: 23px 44px 47px 0px rgba(0, 0, 0, 0.20);
+
+}
+
+.overflow_scroll {
+    overflow-x: scroll !important;
+}
+.overflow_scroll::-webkit-scrollbar {
+    display: none !important;
+}
+
+.img-br {
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: var(--white1);
+}
+
+.sec-2-btn {
+    width: 70px;
+    height: 19px;
+    flex-shrink: 0;
+    border-radius: 6.533px;
+    border: 1px solid transparent;
+    background: var(--green1);
+}
+
+.sec-2-size-btn {
+    padding: 8px 26px 8px 26px;
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: var(--white1);
 }
 
 .imgbox {
@@ -156,6 +202,7 @@ padding: 10px 24px;
 .p-8-33 {
     padding: 8px 33px !important;
 }
+
 select {
     display: block;
     appearance: none;
@@ -171,10 +218,12 @@ select {
     cursor: pointer;
 
 }
-.clickSize div div div button:focus{
+
+.clickSize div div div div button:focus {
     background: #555 !important;
     color: #FFF !important;
 }
+
 /* section 3  */
 .tab-button {
     cursor: pointer;
@@ -196,6 +245,7 @@ select {
     border-bottom: 3px solid #FF0000;
     color: #FF0000;
 }
+
 .tab:focus {
     border-bottom: 3px solid #FF0000;
     color: #FF0000 !important;
@@ -204,6 +254,7 @@ select {
 .tab-content.tab-visible {
     display: block;
 }
+
 /* sec-3 */
 .sec-3-card {
     max-width: 312px;
@@ -293,8 +344,9 @@ select {
 .pt-120 {
     padding-top: 40px !important;
 }
+
 @media (min-width:576px) {
-    :root{
+    :root {
         --fs-xs: 10px;
         --fs-sm: 13px;
         --fs-base: 15px;
@@ -304,16 +356,18 @@ select {
         --fs-2xl2: 23px;
         --fs-3xl: 27px;
     }
+
     .wh-logo {
         max-width: 50px;
         height: 50px;
     }
-    
+
     .wh-4-min {
         max-width: 492px;
         height: 45px;
-    } 
+    }
 }
+
 @media(max-width:868px) {
     .mobileView {
         display: flex !important;
@@ -342,10 +396,12 @@ select {
         cursor: pointer;
     }
 }
+
 @media(min-width:868px) {
     .menu {
         display: none;
     }
+
     .menu span {
         display: flex;
         width: 30px;
@@ -360,20 +416,25 @@ select {
         top: -8px;
     }
 
-}
-@media (min-width:768px) {
-   .wh-logo {
-    max-width: 70px;
-    height: 70px;
+    .overflow_scroll {
+        overflow-x: unset !important;
+    }
 }
 
-.wh-4-min {
-    max-width: 592px;
-    height: 65px;
-} 
+@media (min-width:768px) {
+    .wh-logo {
+        max-width: 70px;
+        height: 70px;
+    }
+
+    .wh-4-min {
+        max-width: 592px;
+        height: 65px;
+    }
 }
+
 @media (min-width:992px) {
-    :root{
+    :root {
         --fs-xs: 10px;
         --fs-sm: 14px;
         --fs-base: 16px;
@@ -383,15 +444,17 @@ select {
         --fs-2xl2: 25px;
         --fs-3xl: 30px;
     }
+
     .wh-logo {
         max-width: 90px;
         height: 90px;
     }
-    
+
     .wh-4-min {
         max-width: 692px;
         height: 85px;
     }
+
     .pt-120 {
         padding-top: 120px !important;
     }
